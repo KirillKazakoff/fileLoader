@@ -8,6 +8,7 @@ const linkT = (data) => ({
     attrs: {
         href: data.url,
         download: data.title,
+        rel: 'noopener',
     },
 });
 
