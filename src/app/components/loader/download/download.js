@@ -23,20 +23,17 @@ export default class Download {
     }
 }
 
+// async fetchFile(url) {
+//     const data = await fetch(url);
+//     const buffer = await data.arrayBuffer();
+//     const blob = new Blob([buffer], { type: "image/png" });
+//     return blob;
+// }
 
-
-
-    // async fetchFile(url) {
-    //     const data = await fetch(url);
-    //     const buffer = await data.arrayBuffer();
-    //     const blob = new Blob([buffer], { type: "image/png" });
-    //     return blob;
-    // }
-
-    // async filesLoad() {
-    //     this.files = urls.map(async (url) => {
-    //         let nameFile = 'file.png';
-    //         const blob = await this.fetchFile(url);
-    //         return new File([blob], nameFile)
-    //     })
-    // }
+// async filesLoad() {
+//     this.files = urls.map(async (url) => {
+//         let nameFile = 'file.png';
+//         const blob = await this.fetchFile(url);
+//         return new File([blob], nameFile)
+//     })
+// }

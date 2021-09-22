@@ -1,3 +1,4 @@
+/* eslint-disable class-methods-use-this */
 import './upload.css';
 
 export default class Upload {
@@ -12,7 +13,6 @@ export default class Upload {
         this.container.addEventListener('dragover', (e) => this.onDragOver(e));
         this.container.addEventListener('drop', (e) => this.onDragDrop(e));
         this.input.addEventListener('input', (e) => this.onUpload(e));
-
     }
 
     onClick(e) {
@@ -35,9 +35,9 @@ export default class Upload {
         const reader = new FileReader();
 
         if (this.contentType !== 'file') {
-            reader.addEventListener('load', (e) => {
-                this.handler(e.target.result, file);
-            })
+            reader.addEventListener('load', (event) => {
+                this.handler(event.target.result, file);
+            });
 
             if (this.contentType === 'text') reader.readAsText(file);
             if (this.contentType === 'image') reader.readAsDataURL(file);

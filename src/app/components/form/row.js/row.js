@@ -18,7 +18,7 @@ export default class Row {
         const currentAmount = this.getCurrentAmount();
         const lastPartParsed = +(lastLoadedPart / 1024 / 1024).toFixed(1);
         this.totalLoad = +(currentAmount + lastPartParsed).toFixed(1);
-    
+
         this.size.textContent = `${this.totalLoad} Mb`;
     }
 

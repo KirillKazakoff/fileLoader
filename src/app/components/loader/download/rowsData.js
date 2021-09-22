@@ -10,7 +10,7 @@ const rowsData = [
     {
         title: 'XMLHttpRequest Standart',
         url: './files/XMLHttpRequest Standard.pdf',
-    }
+    },
 ];
 
 export default rowsData;
