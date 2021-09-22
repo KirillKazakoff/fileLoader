@@ -1,0 +1,95 @@
+.pre {
+    white-space: pre;
+}
+
+.overlapped {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0; margin: 0;
+    opacity: 0.1;
+    width: 100%;
+}
+
+.overlap {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0; margin: 0;
+    width: 100%;
+    background: #eee;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.text-preview {
+    margin-top: 40px;
+    white-space: pre;
+    min-height: 200px;
+    width: 100%;
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.drop-area {
+    height: 200px;
+    width: 100%;
+    border: 1px dashed red;
+    border-radius: 5px;
+}
+
+.upload {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 80%;
+    position: relative;
+
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.upload__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    width: 100%;
+    border-radius: 10px;
+
+    line-height: 40px;
+    text-align: center;
+
+    background: #eee;
+}
+
+.upload__overlay::before {
+    position: absolute;
+
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+
+    content: '';
+
+    border: 2px lightblue dashed;
+    border-radius: 10px;
+}
+
+.upload__overlay:active::before {
+    border-color: salmon;  
+}
+
+.upload__input {
+    position: fixed;
+    top: -1000px;
+    width: 100%;
+}
+
+.video {
+    max-width: 100%;
+}
